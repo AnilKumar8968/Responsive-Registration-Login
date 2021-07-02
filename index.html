@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration and Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        
+        <form action="main.php" method="POST" class="form" >
+            <div class="signup">
+                <div class="heading">
+                    <h1>Sign Up</h1>
+                </div>
+                <div class="form_group">
+                    <input type="text" placeholder="Full Name" name="uname" autocomplete="off" required="">
+                </div>
+                <div class="form_group">
+                    <input type="email" placeholder="E-mail" name="e-mail" autocomplete="off" required="">
+                </div>
+                <div class="form_group">
+                    <input type="password" placeholder="Password" name="pass" required="">
+                </div>
+                <div class="form_group">
+                    <label class="upload">
+                        <input type="file" required="" name="profile">
+                        Upload profile Pic
+                    </label>
+                </div>
+                <div class="form_group">
+                    <input type="submit" value="Submit" >
+                </div>
+                <div class="accountExists">
+                    Already have an accoung? <a href="Log.html" id="log-in" >Login</a>
+                </div>
+            </div>
+        </form>
+
+        <script src="main.js"></script>
+</body>
+</html>

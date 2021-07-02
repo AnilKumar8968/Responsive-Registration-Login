@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 225px;
+
+}
+#wrapper{
+    max-width: 668px;
+    padding: 50px 25px 0;
+    width: 100%;
+    margin: auto;
+}
+#wrapper::before{
+    content:''; 
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    background-image:url("1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: -1;
+
+}
+.heading{
+    text-align: center;
+    padding-bottom: 50px;
+    color: white;
+}
+.heading h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.form{
+    max-width: 355px;
+    margin: auto;
+    width: 100%;
+}
+.form_group{
+    margin: 15px;
+}
+.form_group input{
+    display: block;
+    line-height: 24px;
+    font-size: 16px;
+    color: black;
+    padding: 11px 15px;
+    height: 48px;
+    border-radius: 7px;
+    border:1px solid #E4E8EE;
+    box-shadow: none;
+    width: 100%;
+}
+input[type="file"] {
+    display: none;
+}
+
+input[type="submit"] {
+    background-color: white;
+    font-weight: 700;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(162, 59, 231);
+    color: white;
+}
+.upload {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 11px 15px;
+    height: 48px;
+    border-radius: 7px;
+    border:1px solid #E4E8EE;
+    box-shadow: none;
+    width: 100%;
+    text-align: center;
+}
+.upload:hover{
+    background-color: rgb(162, 59, 231);
+    color: white;
+    text-align: center;
+    font-weight:bold;
+}
+.form_group input:focus{
+    outline: none;
+}
+.form_group input::placeholder{
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+}
+.accountExists{
+    color: white;   
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #E4E8EE;
+}
+.accountExists a{
+    color: #E4E8EE;
+    font-weight: 700;
+    text-decoration: none;
+}
+.accountExists a:hover{
+   text-decoration: underline;
+}
+/* .signup.inActive{
+    display: none;
+}
+.login{
+    display: none;
+}
+.login.active{
+    display: block;
+} */
+
+@media (max-width:1030px){
+    .wrapper::before{
+        left: -25%;
+        min-height: 60vh;
+        height: 500px;
+    }
+}
+
+@media (max-width:767px){
+    .wrapper{
+        max-width: 550px;
+    }
+    .heading h1{
+        font-size: 30px;
+        line-height: 25px;
+    }
+}
